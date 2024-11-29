@@ -89,7 +89,8 @@ sudo find /proc -maxdepth 3 -type l -name uts -exec ls -l  {} \; 2>/dev/null | g
 ### Enter inside an UTS namespace
 
 ```bash
-
+nsenter -u TARGET_PID --pid /bin/bash
+```
 
 
 </details>
